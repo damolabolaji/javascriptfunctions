@@ -8,3 +8,13 @@ console.log(dustBin)
 let sum = 9;
 sum = sum + 10
 alert(sum)
+
+// *Functions*
+// Create a function that subtracts 4 numbers and alerts the difference
+function sub(num1,num2,num3,num4){
+    
+    let subtraction = num1 - num2 - num3 - num4
+    return subtraction
+
+}
+alert(sub(50,4,5,7))
