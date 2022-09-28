@@ -22,3 +22,16 @@ alert(sub(50,4,5,7))
 // Create a function that divides one number by another and returns the remainder
 let modu = (a,b) => a % b
 console.log(modu(50,6))
+
+// *Conditionals*
+// Create a function that adds two numbers and if the sum is greater than 50, alert Jumanji
+function Jumanji(x,y) {
+    let result = x + y;
+    if(result > 50){
+    alert('Jumanji')
+}
+
+Jumanji(50,40);
+
+
+}
