@@ -18,3 +18,7 @@ function sub(num1,num2,num3,num4){
 
 }
 alert(sub(50,4,5,7))
+
+// Create a function that divides one number by another and returns the remainder
+let modu = (a,b) => a % b
+console.log(modu(50,6))
