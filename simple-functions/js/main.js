@@ -8,7 +8,7 @@ Easy(20,3)
 function divide(n1,n2,n3){
     console.log(n1/n2/n3)
 }
-divide(100,5/2)
+divide(100,5,2)
 //create a function that multiplys three numbers and returns the product
 
 //---Medium
