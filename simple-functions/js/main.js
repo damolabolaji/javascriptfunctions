@@ -1,6 +1,9 @@
 //---Easy
 //create a function that subtracts two numbers and alerts the difference
-
+function Easy(num1,num2){
+    alert(num1 - num2)
+}
+Easy(20,3)
 //create a function that divides three numbers and console logs the quotient
 
 //create a function that multiplys three numbers and returns the product
