@@ -5,17 +5,63 @@
 /* Box Model Hack */
 *{
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/******************************************
-/* LAYOUT
-/*******************************************/
-img{
+ul{
+  list-style: none;
+}
+
+.container{
+  width: 500px;
+  margin: auto;
+  padding: 20px;
+
+}
+
+#my-form{
+  background-color: rgb(221, 219, 219);
+  padding: 50px;
+  
+}
+
+#my-form label{
   display: block;
-  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+#my-form input[type="text"]{
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px 5px;
+  border: 1px solid gray;
+  margin-bottom: 20px;
 }
 
 
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
+
+.btn{
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  border: 0;
+  background: #333;
+  color: #fff;
+  border-radius: 5px;
+  margin-top: 20px;
+  
+}
+
+.btn:hover{
+  background: rgb(110, 110, 110);
+}
+
+.error{
+  background: orangered;
+  color: #fff;
+  padding: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+  
+}

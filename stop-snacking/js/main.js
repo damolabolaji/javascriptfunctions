@@ -3,7 +3,7 @@ document.querySelector('#help').addEventListener('click', stopSnacking)
 
 function stopSnacking(){
     let food = document.querySelector('#foods').value
-    document.querySelector('#stops').innerText += '!' //removes whatever 'stops' already printed
+    document.querySelector('#stops').innerText += '' //removes whatever 'stops' already printed
     for(let i = 1; i <= food; i++){
         document.querySelector('#stops').innerText += 'stop eating that!'
     }
