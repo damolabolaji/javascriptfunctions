@@ -11,6 +11,13 @@
 
 ul{
   list-style: none;
+  margin-top: 20px;
+}
+
+li{
+  background-color: rgb(110, 110, 110);
+  color: #fff;
+  padding: 10px;
 }
 
 .container{

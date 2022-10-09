@@ -47,6 +47,7 @@ let cow = document.querySelector('#cows')
 let chicken = document.querySelector('#chicken')
 let pigs = document.querySelector('#pigs')
 let errorMsg = document.querySelector('#msg')
+let formList = document.querySelector('#string-list')
 
 
 document.querySelector('#my-form').addEventListener('submit', printFarmList)
@@ -61,33 +62,32 @@ function printFarmList(e){
     
   }else{
 
+    function farmList(input,label){
+    
+  
+      while(input.length < 3){
+        input = '#' + input;
+      }
+
+      const li = document.createElement('li')
+      li.appendChild(document.createTextNode(`${label} : ${input}`))
+      formList.appendChild(li)
+      
+    }
+
     function printList(num1,num2,num3){
     
-      formNumberString(num1,'cow');
-      formNumberString(num2,'chicken');
-      formNumberString(num3,'pig');
+      farmList(num1,'cow');
+      farmList(num2,'chicken');
+      farmList(num3,'pig');
     }
     
     printList(cow.value, chicken.value, pigs.value);
   
   
   
-    function formNumberString(input,label){
     
-  
-      while(input.length < 3){
-        input = '0' + input;
-      }
-      console.log(`${label} : ${input} `)
-    }
   }
-
- 
-  
-  
-  
-
-
    
 }
 
