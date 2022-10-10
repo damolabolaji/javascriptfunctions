@@ -43,54 +43,62 @@
 //function to console log result
 
 
-let cow = document.querySelector('#cows')
-let chicken = document.querySelector('#chicken')
-let pigs = document.querySelector('#pigs')
-let errorMsg = document.querySelector('#msg')
-let formList = document.querySelector('#string-list')
+// let cow = document.querySelector('#cows')
+// let chicken = document.querySelector('#chicken')
+// let pigs = document.querySelector('#pigs')
+// let errorMsg = document.querySelector('#msg')
+// let formList = document.querySelector('#string-list')
 
 
-document.querySelector('#my-form').addEventListener('submit', printFarmList)
+// document.querySelector('#my-form').addEventListener('submit', printFarmList)
 
-function printFarmList(e){
-  e.preventDefault();
+// function printFarmList(e){
+//   e.preventDefault();
 
-  if(cow.value === '' || chicken.value === '' || pigs.value === ''){
-    errorMsg.classList.add('error');
-    errorMsg.innerHTML = 'Please enter a value in the empty fields'
-    setTimeout(() => errorMsg.remove(), 3000 )
+//   if(cow.value === '' || chicken.value === '' || pigs.value === ''){
+//     errorMsg.classList.add('error');
+//     errorMsg.innerHTML = 'Please enter a value in the empty fields'
+//     setTimeout(() => errorMsg.remove(), 3000 )
     
-  }else{
+//   }else{
 
-    function farmList(input,label){
+//     function farmList(input,label){
     
   
-      while(input.length < 3){
-        input = '#' + input;
-      }
+//       while(input.length < 3){
+//         input = '#' + input;
+//       }
 
-      const li = document.createElement('li')
-      li.appendChild(document.createTextNode(`${label} : ${input}`))
-      formList.appendChild(li)
+//       const li = document.createElement('li')
+//       li.appendChild(document.createTextNode(`${label} : ${input}`))
+//       formList.appendChild(li)
       
-    }
+//     }
 
-    function printList(num1,num2,num3){
+//     function printList(num1,num2,num3){
     
-      farmList(num1,'cow');
-      farmList(num2,'chicken');
-      farmList(num3,'pig');
-    }
+//       farmList(num1,'cow');
+//       farmList(num2,'chicken');
+//       farmList(num3,'pig');
+//     }
     
-    printList(cow.value, chicken.value, pigs.value);
+//     printList(cow.value, chicken.value, pigs.value);
   
   
   
     
-  }
+//   }
    
-}
+// }
 
+
+let a = 5;
+let b = 3;
+
+a = 0 + b;
+
+console.log(a);
+console.log(b);
 
 
 
